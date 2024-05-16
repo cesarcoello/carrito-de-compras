@@ -1,5 +1,6 @@
+import { formatMoney } from '../helpers/formatMoney'
 
-export default function Guitar({guitar}){
+export default function Guitar({guitar, addToCart}){
 
     const {id, name, image, description, price } = guitar
 
@@ -11,10 +12,11 @@ export default function Guitar({guitar}){
                 <div className="col-8">
                     <h3 className="text-black fs-4 fw-bold text-uppercase">{name}</h3>
                     <p>{description}</p>
-                    <p className="fw-black text-primary fs-3">L{price}</p>
+                    <p className="fw-black text-primary fs-3">{formatMoney(price)}</p>
                     <button 
                         type="button"
                         className="btn btn-dark w-100"
+                        onClick={() => addToCart(guitar)}
                     >Agregar al Carrito</button>
                 </div>
         </div>

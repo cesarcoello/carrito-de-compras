@@ -9,9 +9,10 @@ function App() {
     const localStorageCart = localStorage.getItem('cart')
     return localStorageCart ? JSON.parse(localStorageCart) : []
   }
+
   
   const [data] = useState(db)
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(initialCart)
 
   const MIN_ITEMS = 1
   const MAX_ITEMS = 5

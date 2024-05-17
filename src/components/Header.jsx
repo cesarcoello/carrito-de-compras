@@ -29,10 +29,10 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                             ):(
                             <>
                         
-                                <table className="w-100 table">
+                                <table className="w-100 table ">
                                     <thead>
                                         <tr>
-                                            <th>Imagen</th>
+                                            <th >Imagen</th>
                                             <th>Nombre</th>
                                             <th>Precio</th>
                                             <th>Cantidad</th>
@@ -41,18 +41,18 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                                     </thead>
                                     <tbody>
                                         {cart.map( guitar => (
-                                            <tr key={guitar.id}>
-                                                <td>
+                                            <tr key={guitar.id} >
+                                                <td >
                                                     <img 
                                                         className="img-fluid" 
                                                         src={`/img/${guitar.image}.jpg`} 
                                                         alt="imagen guitarra" />
                                                 </td>
-                                                <td>{guitar.name}</td>
+                                                <td id="content-name-modal">{guitar.name}</td>
                                                 <td className="fw-bold">
                                                         { formatMoney(guitar.price*guitar.quantity) }
                                                 </td>
-                                                <td id='c-cantidad' className="flex align-items-start gap-4">
+                                                <td id='c-cantidad' className="flex align-items-start gap-4 ">
                                                     <button
                                                         type="button"
                                                         className="btn btn-dark"
@@ -69,7 +69,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                                                         +
                                                     </button>
                                                 </td>
-                                                <td>
+                                                <td > 
                                                     <button
                                                         className="btn btn-danger"
                                                         type="button"

@@ -404,9 +404,14 @@ button:not(:disabled),
   width: 100%;
   margin-bottom: 1rem;
   color: var(--bs-table-color);
-  vertical-align: top;
+  vertical-align: center;
   border-color: var(--bs-table-border-color);
 }
+
+#content-name-modal{
+  vertical-align: top;
+}
+
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);

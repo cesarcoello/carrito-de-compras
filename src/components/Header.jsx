@@ -22,10 +22,10 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                     >
                         <img className="img-fluid" src="/img/carrito.png" alt="imagen carrito" />
 
-                        <div id="carrito" className="bg-white p-3">
+                        <div id="carrito" className="bg-white p-3 modal-movil">
 
                             { isEmpty ? (
-                                <p className="text-center">El carrito esta vacio</p>
+                                <p className="text-center">El carrito está vacÍo</p>
                             ):(
                             <>
                         

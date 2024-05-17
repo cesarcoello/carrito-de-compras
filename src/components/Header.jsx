@@ -52,7 +52,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                                                 <td className="fw-bold">
                                                         { formatMoney(guitar.price*guitar.quantity) }
                                                 </td>
-                                                <td className="flex align-items-start gap-4">
+                                                <td id='c-cantidad' className="flex align-items-start gap-4">
                                                     <button
                                                         type="button"
                                                         className="btn btn-dark"

@@ -18,9 +18,11 @@
 @media (max-width: 576px) {
   
   .modal-movil{
-    font-size: 10px;
+    font-size: 11px;
     max-width: 100%;
   }
+
+  
 }
 
 .carrito #carrito {

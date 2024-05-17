@@ -48,7 +48,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                                                         src={`/img/${guitar.image}.jpg`} 
                                                         alt="imagen guitarra" />
                                                 </td>
-                                                <td id="content-name-modal">{guitar.name}</td>
+                                                <td>{guitar.name}</td>
                                                 <td className="fw-bold">
                                                         { formatMoney(guitar.price*guitar.quantity) }
                                                 </td>

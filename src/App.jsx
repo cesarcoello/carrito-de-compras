@@ -47,7 +47,7 @@ function App() {
 
   function removeFromCart(id) {
     setCart( prevCart => prevCart.filter( guitar => guitar.id !== id))
-    toast('PRODUCTO ELIMINADO', {
+    toast.error('¡PRODUCTO ELIMINADO!', {
       position: 'top-center',
       duration: 2000
     });
@@ -116,7 +116,7 @@ function App() {
             <p className="text-white text-center fs-4 mt-4 m-md-0">GuitarLA - Todos los derechos Reservados</p>
         </div>
     </footer>
-    <Toaster />
+    <Toaster richColors />
 
     </>
   )

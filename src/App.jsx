@@ -38,15 +38,16 @@ function App() {
       setCart([...cart, item])
     }
 
-    toast.success('¡AGREGADO AL CARRITO!', {
-      position: 'top-center',
-      duration: 2000
-    });
+    
     
   }
 
   function removeFromCart(id) {
     setCart( prevCart => prevCart.filter( guitar => guitar.id !== id))
+    toast('PRODUCTO ELIMINADO', {
+      position: 'top-center',
+      duration: 2000
+    });
   }
 
   function decreaseQuantity(id) {

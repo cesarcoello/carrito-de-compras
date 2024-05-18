@@ -10,7 +10,7 @@ export default function Guitar({guitar, addToCart}){
                     <img className="img-fluid" src={`/img/${image}.jpg`} alt="imagen guitarra" />
                 </div>
                 <div className="col-8">
-                    <h3 className="text-black fs-4 fw-bold text-uppercase">{name}</h3>
+                    <h3 className="text-black fs-4 fw-bold text-uppercase guitar-name">{name}</h3>
                     <p>{description}</p>
                     <p className="fw-black text-primary fs-4">{formatMoney(price)}</p>
                     <button 

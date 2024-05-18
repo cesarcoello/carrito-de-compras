@@ -199,6 +199,16 @@ h3, .h3 {
   }
 }
 
+@media (min-width: 768px) {
+  .guitar-name{
+    display: inline-block;
+    width: 100%; /* Ancho máximo del nombre */
+    max-height: 55px; /* Alto máximo del nombre */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;

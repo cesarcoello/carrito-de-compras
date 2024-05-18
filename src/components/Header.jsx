@@ -62,6 +62,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                                                     </button>
                                                         {guitar.quantity}
                                                     <button
+                                                        id='btn-mas'
                                                         type="button"
                                                         className="btn btn-dark"
                                                         onClick={ ()=>increaseQuantity(guitar.id)}

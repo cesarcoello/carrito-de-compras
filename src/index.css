@@ -21,6 +21,9 @@
     font-size: 11px;
     max-width: 100%;
   }
+  #c-cantidad{
+    font-size: 10px;
+  }
 
   
 }
@@ -797,3 +800,12 @@ button:not(:disabled),
     z-index: 10;
   }
 }
+
+/* @media (max-width: 542px) {
+    #btn-mas, #btn-minus{
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+} */

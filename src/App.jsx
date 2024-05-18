@@ -38,7 +38,10 @@ function App() {
       setCart([...cart, item])
     }
 
-    
+    toast.success('¡PRODUCTO AGREGADO!', {
+      position: 'top-center',
+      duration: 2000
+    });
     
   }
 

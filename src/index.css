@@ -207,6 +207,7 @@ h3, .h3 {
     display: inline-block;
     width: 100%; /* Ancho máximo del nombre */
     max-height: 55px; /* Alto máximo del nombre */
+    min-height: 55px;
     overflow: hidden;
     text-overflow: ellipsis;
   }

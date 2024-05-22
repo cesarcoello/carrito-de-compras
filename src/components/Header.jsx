@@ -1,11 +1,7 @@
-import { useMemo } from 'react'
+import { useCart } from '../hooks/useCart'
 import { formatMoney } from '../helpers/formatMoney'
 
-export default function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart}){
-
-    //State Derivado
-    const isEmpty = useMemo ( () => cart.length===0, [cart])
-    const cartTotal = useMemo( () => (cart.reduce((total, item) => total + (item.quantity * item.price), 0)) )
+export default function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart, isEmpty, cartTotal}){
     
     return (
         <header className="py-5 header">
@@ -50,7 +46,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                                                 </td>
                                                 <td>{guitar.name}</td>
                                                 <td className="fw-bold">
-                                                        { formatMoney(guitar.price*guitar.quantity) }
+                                                        { formatMoney(guitar.price) }
                                                 </td>
                                                 <td id='c-cantidad' className="flex align-items-start gap-4 ">
                                                     <button
